@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>program task</title>
+    </head>
+    <body>
+        <h2>download task program</h2>
+        <p>Program bar : <progress id ="bar" value="0" max="100">
+        <span>0</span> % </progress></p>
+<script>
+        var  C = 0;
+        var Pbar= document.getElementById("bar");
+          function count(){
+            if (C<=100)
+        {
+    
+        C=C+1;
+        
+        Pbar.value = C;
+        
+        setTimeout("count()",100);
+        }
+    }
+    count();
+       
+        
+        </script>
+        
+        </body>
+    </body>
+</html>

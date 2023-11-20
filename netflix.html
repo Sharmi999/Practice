@@ -1,0 +1,68 @@
+<html>
+
+<head>
+
+<style>
+
+.netflix-animation {
+
+display: flex; 
+
+align-items: center ;
+justify-content: center;
+
+height: 100vh;
+
+background-color: #000;
+
+overflow : hidden;
+
+}
+
+.logo {
+
+font-family: 'Helvetica Neue', Helvetica,
+
+Arial, sans-serif;
+
+font-size: 72px; font-weight: bold;
+
+color: #e50914; text-transform: uppercase;
+
+opacity: 0;
+
+animation: logoAnimation 1s linear forwards;
+}
+
+@keyframes logoAnimation {
+
+0% {
+
+opacity: 0;
+
+transform:scale(0);
+}
+
+50%{
+
+opacity: 1; 
+transform:scale(1.2);
+}
+
+100%{
+
+opacity: 1;
+
+transform:scale(1);
+}
+}
+</style>
+
+</head> <body>
+
+<div class="netflix-animation"> 
+    <div class="logo">Netflix</div>
+
+</div>
+
+</body> </html>

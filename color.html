@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>OPTION LIST COLOR</title>
+    </head>
+    <body>
+        <form name = "f1">
+            <select name = "color" value = "" id = "col" onchange = "colorchange()">
+                <option value = "green" selected>green</option>
+                <option value = "blue" selected>blue</option>
+                <option value = "red" selected>red</option>  
+                <option value = "yellow" selected>yellow  </option>
+            </select>
+        </form>
+    </body>
+    <script>
+        function colorchange()
+        {
+            var ch = document.getElementById('col')
+            document.bgColor = ch.value;
+        }
+    </script>
+</html>

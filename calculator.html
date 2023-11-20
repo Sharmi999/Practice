@@ -1,0 +1,74 @@
+<html>
+    <body bgcolor="yellow">
+        <table>
+            <h1 align = "center"><font size = "+30">Online Calculator</h1></font>
+
+            <tr>
+              <td><font size = "+3">Enter a first number : </td></font>
+              
+              <td><input type="text" id="firstNumber"  required /></td>
+            </tr>
+            <tr>
+              
+                <td><font size = "+3">Enter a second number : </td></font>
+              <td><input type="text" id="secondNumber" required /></td>
+            </tr>
+          </table>
+          <br/>
+
+          <script type="text/javascript">
+            
+            function getValue(firstNumber, secondNumber){
+                x = document.getElementById("firstNumber").value;
+                y = document.getElementById("secondNumber").value;
+            }
+            
+            function add() {
+                
+                getValue();
+                
+                sum=Number(x)+Number(y);
+               
+                document.getElementById("result").innerHTML =  x+" + "+y+" = "+sum;
+            }
+           
+            function sub() {
+                
+                getValue();
+                
+                sub=Number(x)-Number(y);
+                
+                document.getElementById("result").innerHTML = x+" - "+y+" = "+sub;
+            }
+            
+            function mul() {
+               
+                getValue();
+                
+                mul=Number(x)*Number(y);
+                
+                document.getElementById("result").innerHTML = x+" * "+y+" = "+mul;
+            }
+            
+            function div() {
+                
+                getValue();
+               
+                div=Number(x)/Number(y);
+                
+                document.getElementById("result").innerHTML = x+" / "+y+" = "+div;
+            }
+        </script>
+          
+          <button onclick="add()">Add</button>
+
+          <button onclick="sub()">Substract</button>
+          
+          <button onclick="mul()">Multiply</button>
+          
+          <button onclick="div()">Divide</button><br/>
+          
+          <p id ="result">Result</p>
+        
+    </body>
+</html>

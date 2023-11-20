@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Image select from list</title>
+        <script>
+            function imgselect(){
+                var ind;
+                var list=document.getElementById('item');
+                ind=list.selectedIndex;
+                var im=list[ind].value;
+                ff.src=im;
+                alert("you select " + im);
+
+            }
+        </script>
+    </head>
+    <body bgcolor="aqua" text="blue">
+        <h1 align="center"><u>select your Favourite Image</u></h1>
+        <form name="f1">
+            <select  id="item" size="5" onclick="imgselect()">
+            <option selected>harry3.jpg</option>
+            <option >harry2.webp</option>
+            <option >harr4.webp</option>
+            </select>
+       <center>
+        <img id="ff" src='' border="2" height="450" width="450">
+    </form>
+    </center>
+    </body>
+</html>

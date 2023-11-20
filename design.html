@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>look effect</title>
+    </head>
+    <body>
+        <p>click the "check it" button and see result</p>
+        <button onclick="myfun()">check it</button>
+        <div id="mydiv"><h1>
+            welcome to indian IT hub
+        </h1></div>
+        <script>
+            function myfun(){
+                var x=document.getElementById("mydiv");
+                if(x.style.display=="none"){
+                    x.style.display="block";
+                }else{
+                    x.style.display="none";
+                }
+            }
+        </script>
+    </body>
+</html>

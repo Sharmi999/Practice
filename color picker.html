@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>color picker</title>
+        <script>
+            function color_picker()
+            {
+                var col = document.getElementById("favcolor");
+                document.body.style.backgroundColor = col.value;
+            }
+            </script>
+    </head>
+    <body bgcolor="lightgreen" text = "red">
+        <h1 id = "pic" align = "center">WELCOME TO COLOR WORLD</h1>
+        <label>What is your favourite color?
+            <input type = "color" id = "favcolor" onmouseout = "color_picker()">
+        </label>
+    </body>
+</html>
